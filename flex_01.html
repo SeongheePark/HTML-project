@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 연습</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+    }
+    .flex-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: antiquewhite;
+    }
+    /* 
+        flex : 1; 단축형 
+        부모 컨테이너 요소의 크기를 1만큼 비율로 차지 하는 속성
+        즉 자식요소가 2개이면 1:1 비율로 크기가 지정된다.
+    */
+
+    .flex-item{
+        flex: 1;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">item1</div>
+        <div class="flex-item">item2</div>
+        <div class="flex-item">item3</div>
+    </div>
+</body>
+
+</html>
